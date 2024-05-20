@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Sawhney's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Sarah Sawhney</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -21,51 +22,130 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Welcome</h2>
-        <p>Hi, I'm Sarah Sawhney, a Computer Engineering student at Purdue with a focus on AI and Machine Learning.</p>
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>Sarah Sawhney</h1>
+            <p>Welcome to my portfolio!</p>
+        </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I am passionate about technology, drones, and robotics. My journey in engineering has been shaped by hands-on experiences and a love for solving complex problems.</p>
+        <p>Hi, I'm Sarah Sawhney, a Computer Engineering student at Purdue specializing in AI and ML. My journey into engineering began with a childhood fascination for how things work, evolving into a love for robotics and drone technology.</p>
     </section>
 
-    <section id="experience">
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p><strong>Purdue University, West Lafayette, IN</strong></p>
+        <p>Bachelor of Engineering (BE) in Computer Engineering with Artificial Intelligence/Machine Learning Concentration</p>
+        <p>Minor in Astronomy | Certificate in Collaborative Leadership</p>
+    </section>
+
+    <section id="experience" class="section">
         <h2>Experience</h2>
-        <h3>Purdue Unmanned Aerial Systems (UAS) Research and Testing Facility</h3>
-        <p>Research Assistant (09/2023 - Present)</p>
-        <ul>
-            <li>Developed an autonomous drone control system using SLAM, ROS, and Docker.</li>
-            <li>Led hardware team in international UAV competitions.</li>
-        </ul>
-        <!-- Add more experiences here -->
+        <div class="experience-item card">
+            <h3>Purdue Unmanned Aerial Systems (UAS) Research and Testing Facility</h3>
+            <p>Research Assistant (09/2023 - Present)</p>
+            <ul>
+                <li>Developed an autonomous drone control system using SLAM, ROS, Gazebo, and Docker.</li>
+                <li>Led hardware team in assembling PX4 500 and Vision drones and constructing a 15x15 meter maze for an international UAV competition.</li>
+            </ul>
+        </div>
+        <div class="experience-item card">
+            <h3>Skylark Drones</h3>
+            <p>Data Science Intern (05/2023 - 08/2023)</p>
+            <ul>
+                <li>Implemented a Confluence-based knowledge base for Spectra Software to optimize onboarding efficiency.</li>
+                <li>Conducted in-depth analysis of cross-sector drone data and managed sector-specific software solutions.</li>
+            </ul>
+        </div>
+        <div class="experience-item card">
+            <h3>Purdue Vertically Integrated Projects (VIP) Drones</h3>
+            <p>Drone Control Team Co-Lead (08/2022 - 12/2022)</p>
+            <ul>
+                <li>Hosted and participated in the International Unmanned Aerial Vehicle Competition.</li>
+                <li>Conducted software tests on the drone object tracking system using Robot Operating System (ROS2).</li>
+            </ul>
+        </div>
+        <div class="experience-item card">
+            <h3>Purdue Space Program (PSP) Liquid Rocket Team</h3>
+            <p>Propulsion Team Member (08/2021 - 08/2022)</p>
+            <ul>
+                <li>Worked with the team to analyze data from previous launches to optimize the new BZB rocket engine.</li>
+                <li>Researched efficient fuels and oxidizers by comparing the O/F ratio, specific impulse, and various parameters.</li>
+            </ul>
+        </div>
+        <div class="experience-item card">
+            <h3>Engineering Projects in Community Service (EPICS)</h3>
+            <p>CAR (Creating Accessible Racing) Project Partner Liaison (01/2022 - 05/2022)</p>
+            <ul>
+                <li>Designed and implemented an over-ride steering wheel mechanism for Ford Wilson Race of Champions.</li>
+                <li>Managed multiple internal and external stakeholders, aligning common goals, and communicating risks.</li>
+            </ul>
+        </div>
+        <div class="experience-item card">
+            <h3>AAEE (Aero Astro Engineering Education)</h3>
+            <p>Mars Rovers Team Member (08/2021 - 12/2021)</p>
+            <ul>
+                <li>Developed 10 fully functioning wireless rovers for Purdue Space Day.</li>
+                <li>Programmed Xbee3 Module Interfacing with Arduino UNO boards.</li>
+            </ul>
+        </div>
+        <div class="experience-item card">
+            <h3>Au Bon Pain</h3>
+            <p>Student Supervisor (09/2023 - Present)</p>
+            <ul>
+                <li>Responsible for recruitment and training of part-time students and managing store operations and inventory.</li>
+                <li>Demonstrated a quick learning ability in adapting to dynamic work conditions.</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section">
         <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, MATLAB, C, C++, Verilog</li>
-            <li>Software: NX1946, ROS, SolidWorks, Confluence, Gazebo</li>
-            <li>Hardware: Arduino, Raspberry Pi, Microcontrollers</li>
+        <ul class="skills-list">
+            <li><i class="fas fa-code"></i> Programming Languages: Python, MATLAB, C, C++, Verilog</li>
+            <li><i class="fas fa-laptop-code"></i> Software: NX1946, ROS, SolidWorks, Confluence, Gazebo</li>
+            <li><i class="fas fa-microchip"></i> Hardware: Arduino, Raspberry Pi, Microcontrollers</li>
+            <li><i class="fas fa-book"></i> Relevant Coursework: Signals and Digital System Design, Microprocessor System Interfacing, OOP in C++, Computer and Network Security</li>
         </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <h3>Autonomous Drone Control System</h3>
-        <p>Developed a system for navigating drones through custom-built mazes using SLAM, ROS, and Docker.</p>
-        <!-- Add more projects here -->
+        <div class="project-item card">
+            <h3>Autonomous Drone Control System</h3>
+            <p>Developed a system for navigating drones through custom-built mazes using SLAM, ROS, and Docker.</p>
+        </div>
+        <div class="project-item card">
+            <h3>Safety Analysis of NYC Bike Traffic</h3>
+            <p>Conducted analysis of safety measures in managing bike traffic in NYC using Python and open-source statistical libraries.</p>
+        </div>
+        <div class="project-item card">
+            <h3>Drum Beat Pattern Replication</h3>
+            <p>Built, tested, and integrated a system to replicate a drum by creating beat patterns from any audio file using Verilog.</p>
+        </div>
+        <div class="project-item card">
+            <h3>Audio Equalizer Design</h3>
+            <p>Designed and constructed an audio equalizer comprising filters and operational amplifiers to isolate and magnify signals at bass, mid, and treble frequencies.</p>
+        </div>
+        <div class="project-item card">
+            <h3>Manufacturing Analytics Technology</h3>
+            <p>Conducted market research on competitor products and enhanced user interface software for Abe Collective's manufacturing analytics technology to improve data integration and user experience optimization.</p>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>Email: sawhnes@purdue.edu</p>
+        <p>Email: <a href="mailto:sawhnes@purdue.edu">sawhnes@purdue.edu</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sarah-sawhney" target="_blank">Sarah Sawhney</a></p>
+        <p>Phone: +1 (469) 588 1053</p>
     </section>
 
     <footer>
         <p>&copy; 2024 Sarah Sawhney. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
